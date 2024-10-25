@@ -2,12 +2,12 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline-style: solid;
+  /* outline-style: solid;
   outline-color: red;
-  outline-width: 1px;
+  outline-width: 1px; */
 }
 
-.background {
+.container {
   background-color: rgb(238, 201, 201);
   height: 100vh;
   display: flex;
@@ -33,7 +33,7 @@
 }
 
 .calculator-display {
-  overflow: hidden;
+  overflow: auto;
   width: 200px;
   display: flex;
   padding: 20px;
@@ -101,4 +101,30 @@ button:active {
 
 .point {
   border-radius: 0px 0px 0px 20px;
+}
+
+input {
+  background-color: #fbf9fa;
+  border: none;
+}
+
+.dark-mode {
+  container {
+    background-color: #231133;
+  }
+  .calculator-body,
+  .display-division,
+  input {
+    color: #f59cba;
+    background-color: #101010;
+  }
+  button {
+    color: #9a4fb8;
+    background-color: #101010;
+  }
+  button:hover {
+    background-color: #9a4fb8;
+    color: #101010;
+    cursor: pointer;
+  }
 }

@@ -7,34 +7,35 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="background">
+    <div class="container">
       <div class="calculator-body">
         <div class="display-division">
-          <input class="calculator-display" disabled value="10" />
-          <input class="calculator-result" disabled value="10" />
+          <input class="calculator-display" disabled value="" />
+          <input class="calculator-result" disabled value="" />
         </div>
         <div class="input-division">
           <div class="buttons">
-            <button class="input-button">C</button>
-            <button class="input-button"><=</button>
-            <button class="input-button">()</button>
-            <button class="input-button plus">+</button>
-            <button class="input-button">7</button>
-            <button class="input-button">8</button>
-            <button class="input-button">9</button>
-            <button class="input-button minus">-</button>
-            <button class="input-button">4</button>
-            <button class="input-button">5</button>
-            <button class="input-button">6</button>
-            <button class="input-button times">x</button>
-            <button class="input-button">1</button>
-            <button class="input-button">2</button>
-            <button class="input-button">3</button>
-            <button class="input-button divide">/</button>
-            <button class="input-button point">.</button>
-            <button class="input-button">0</button>
-            <button class="input-button">%</button>
-            <button class="input-button equals">=</button>
+            <button class="input" data-key="()" style="opacity: 0">w</button>
+            <button class="input-button operator clear" data-key="c">C</button>
+            <button class="input-button operator" data-key="b">⌫</button>
+            <button class="input-button plus operator" data-key="+">+</button>
+            <button class="input-button number" data-key="7">7</button>
+            <button class="input-button number" data-key="8">8</button>
+            <button class="input-button number" data-key="9">9</button>
+            <button class="input-button minus operator" data-key="-">-</button>
+            <button class="input-button number" data-key="4">4</button>
+            <button class="input-button number" data-key="5">5</button>
+            <button class="input-button number" data-key="6">6</button>
+            <button class="input-button times operator" data-key="x">x</button>
+            <button class="input-button number" data-key="1">1</button>
+            <button class="input-button number" data-key="2">2</button>
+            <button class="input-button number" data-key="3">3</button>
+            <button class="input-button divide operator" data-key="/">/</button>
+            <button class="input-button point mode-toggle">D</button>
+            <button class="input-button number" data-key=".">.</button>
+            <button class="input-button number" data-key="0">0</button>
+
+            <button class="input-button equals operator" data-key="=">=</button>
           </div>
         </div>
       </div>
